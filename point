@@ -1,0 +1,15 @@
+from sprites import *
+
+d = Sprite(shape='blank',visible=False)
+
+d.screen.bgcolor('black')
+
+radius = 200
+
+while True:
+    d.randomcolor()
+    d.randomheading()
+    d.fd(random.randint(1,radius))
+
+    d.dot(10)
+    d.home()
